@@ -5,7 +5,7 @@ popd
 
 echo Installing mod...
 
-rd /S /Q "%TF2LOC%\tf\materials\vgui\logos\cryan_custom_hud"
+rd /S /Q "%TF2LOC%\tf\materials\vgui\logos\visual_improve_hud"
 
 xcopy /S /E /Y "tf" "%TF2LOC%\tf"
 
