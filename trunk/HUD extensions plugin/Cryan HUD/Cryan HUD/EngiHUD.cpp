@@ -186,7 +186,7 @@ void __fastcall EngiHUD::Intercept__CBuildingStatusItem_TeleporterEntrance__Perf
 	}
 	catch(logic_error e)
 	{
-		Warning("Cryan HUD: EngiHUD: ERROR: %s\r\n",e.what());
+		Warning("The Visual Improve: EngiHUD: ERROR: %s\r\n",e.what());
 	}
 }
 
@@ -239,7 +239,7 @@ void __fastcall EngiHUD::Intercept__CBuildingStatusItem_TeleporterExit__PerformL
 	}
 	catch(logic_error e)
 	{
-		Warning("Cryan HUD: EngiHUD: ERROR: %s\r\n",e.what());
+		Warning("The Visual Improve: EngiHUD: ERROR: %s\r\n",e.what());
 	}
 }
 

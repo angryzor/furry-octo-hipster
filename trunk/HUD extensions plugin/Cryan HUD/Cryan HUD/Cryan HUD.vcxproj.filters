@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\angry_hax">
+      <UniqueIdentifier>{4c7ab7be-6429-48b9-a96f-e3d02637fe5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\angry_hax\memory">
+      <UniqueIdentifier>{00e130fb-0a91-4dd7-85a2-09562e24bd47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\angry_hax">
+      <UniqueIdentifier>{9b8474c2-0d0e-4ba5-8838-0c85c7fbe352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\angry_hax\memory">
+      <UniqueIdentifier>{7809f548-7043-4be3-9765-d9dc77840402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\death notices">
+      <UniqueIdentifier>{96d2ab51-d1c4-4dd6-bf86-df37cf80b1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\death notices">
+      <UniqueIdentifier>{8079cd02-2a62-4c80-84fc-8e8a0287dc66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sdk shenanigans">
+      <UniqueIdentifier>{36e02cfc-dd13-43e3-9866-ffe7026de7be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\vgui">
+      <UniqueIdentifier>{e879eeca-69df-44bb-8bbf-ace6b4b95e33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engi_hud">
+      <UniqueIdentifier>{cba8624e-f770-4439-8438-be48ee37cd86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engi_hud">
+      <UniqueIdentifier>{ad7ee659-207b-485d-8a3e-a0fdfdb5a7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\angry_hax\classes">
+      <UniqueIdentifier>{05caba6f-9cdb-47e5-8a48-22723ecc1b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\angry_hax\classes\data">
+      <UniqueIdentifier>{88aab87b-fa6f-4b24-8b90-fd483f28b212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\angry_hax\classes\vtables">
+      <UniqueIdentifier>{0abf5196-72a5-4f8e-80fa-b54e4391e809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\angry_hax\classes\rtti">
+      <UniqueIdentifier>{7e3c7f50-a6c6-4244-883a-5347a44e60c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\angry_hax\classes">
+      <UniqueIdentifier>{cc617e12-4461-4115-9403-86c23de82503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\angry_hax\classes\rtti">
+      <UniqueIdentifier>{0a0f4970-98e3-47eb-9153-aef4db0caf51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\angry_hax\classes\vtables">
+      <UniqueIdentifier>{442d17d1-a843-49a3-8732-f26b363cf1b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HUDPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryOpener.cpp">
+      <Filter>Source Files\angry_hax\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="VTableHooker.cpp">
+      <Filter>Source Files\angry_hax\classes\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="RTTIScanner.cpp">
+      <Filter>Source Files\angry_hax\classes\rtti</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathNotices.cpp">
+      <Filter>Source Files\death notices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Source SDK\public\tier0\memoverride.cpp">
+      <Filter>Source Files\sdk shenanigans</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryScanner.cpp">
+      <Filter>Source Files\angry_hax\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="SigScanner.cpp">
+      <Filter>Source Files\angry_hax\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryRangeWorker.cpp">
+      <Filter>Source Files\angry_hax\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="VTableScanner.cpp">
+      <Filter>Source Files\angry_hax\classes\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="EngiHUD.cpp">
+      <Filter>Source Files\engi_hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Source SDK\public\vgui_controls\vgui_controls.cpp">
+      <Filter>Source Files\sdk shenanigans</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HUDPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryOpener.h">
+      <Filter>Header Files\angry_hax\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="RTTIScanner.h">
+      <Filter>Header Files\angry_hax\classes\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="VTableHooker.h">
+      <Filter>Header Files\angry_hax\classes\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathNotices.h">
+      <Filter>Header Files\death notices</Filter>
+    </ClInclude>
+    <ClInclude Include="vguihelpers.h">
+      <Filter>Header Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RTTIStructs.h">
+      <Filter>Header Files\angry_hax\classes\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryScanner.h">
+      <Filter>Header Files\angry_hax\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="SigScanner.h">
+      <Filter>Header Files\angry_hax\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryRangeWorker.h">
+      <Filter>Header Files\angry_hax\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="VTableScanner.h">
+      <Filter>Header Files\angry_hax\classes\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="EngiHUD.h">
+      <Filter>Header Files\engi_hud</Filter>
+    </ClInclude>
+    <ClInclude Include="classtools.h">
+      <Filter>Header Files\angry_hax\classes\data</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

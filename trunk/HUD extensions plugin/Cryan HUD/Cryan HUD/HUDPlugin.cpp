@@ -28,7 +28,7 @@ bool CHUDPlugin::Load(	CreateInterfaceFn interfaceFactory, CreateInterfaceFn gam
 	ConnectTier2Libraries( &interfaceFactory, 1 );
 	ConnectTier3Libraries( &interfaceFactory, 1 );
 
-	Msg("================== Cryan HUD Extensions v0.1 =================\r\n");
+	Msg("================== The Visual Improve HUD Extensions v0.1 =================\r\n");
 	Msg(" Build 0001\r\n");
 	Msg(" Written by angryzor\r\n");
 	Msg("--------------------------------------------------------------\r\n");
@@ -45,7 +45,7 @@ bool CHUDPlugin::Load(	CreateInterfaceFn interfaceFactory, CreateInterfaceFn gam
 		Msg(" Registering ConVars...\r\n");
 		ConVar_Register( 0 );
 		Msg(" Boot successful! HUD Extensions ready.\r\n");
-		Msg("==============================================================\r\n");
+		Msg("===========================================================================\r\n");
 		return true;
 	}
 	catch(logic_error e)
@@ -63,7 +63,7 @@ bool CHUDPlugin::Load(	CreateInterfaceFn interfaceFactory, CreateInterfaceFn gam
 //---------------------------------------------------------------------------------
 void CHUDPlugin::Unload( void )
 {
-	Msg("================ Cryan HUD Extensions quitting ===============\r\n");
+	Msg("================ The Visual Improve HUD Extensions quitting ===============\r\n");
 	try
 	{
 		ehud_->Unhook();
@@ -76,7 +76,7 @@ void CHUDPlugin::Unload( void )
 	{
 		Warning(e.what());
 	}
-	Msg("==============================================================\r\n");
+	Msg("===========================================================================\r\n");
 
 	ConVar_Unregister( );
 	DisconnectTier3Libraries( );
@@ -103,7 +103,7 @@ void CHUDPlugin::UnPause( void )
 //---------------------------------------------------------------------------------
 const char *CHUDPlugin::GetPluginDescription( void )
 {
-	return "Cryan HUD Extensions -- the Visual Improve";
+	return "The Visual Improve HUD Extensions";
 }
 
 //---------------------------------------------------------------------------------

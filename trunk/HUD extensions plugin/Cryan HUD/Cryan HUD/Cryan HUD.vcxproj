@@ -43,6 +43,7 @@
     <ProjectGuid>{50CA5BB2-9E45-470E-88B9-2DDCFF14B82E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>CryanHUD</RootNamespace>
+    <ProjectName>The Visual Improve</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
