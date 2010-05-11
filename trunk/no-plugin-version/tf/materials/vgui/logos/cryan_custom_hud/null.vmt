@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "vgui/logos/cryan_custom_hud/null"
+	"$baseTexture" "vgui/logos/visual_improve_hud/null"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

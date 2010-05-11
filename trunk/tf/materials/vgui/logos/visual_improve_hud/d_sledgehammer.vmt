@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "vgui/logos/cryan_custom_hud/d_sledgehammer"
+	"$baseTexture" "vgui/logos/visual_improve_hud/d_sledgehammer"
 	"$translucent"		"1"
 	"$vertexcolor"		"1"
 	"$vertexalpha"		"1"

@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "vgui/logos/cryan_custom_hud/dneg_blutsauger"
+	"$baseTexture" "vgui/logos/visual_improve_hud/dneg_blutsauger"
 	"$translucent"		"1"
 	"$vertexcolor"		"1"
 	"$vertexalpha"		"1"

@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "vgui/logos/cryan_custom_hud/dneg_force_a_nature"
+	"$baseTexture" "vgui/logos/visual_improve_hud/dneg_force_a_nature"
 	"$translucent"		"1"
 	"$vertexcolor"		"1"
 	"$vertexalpha"		"1"

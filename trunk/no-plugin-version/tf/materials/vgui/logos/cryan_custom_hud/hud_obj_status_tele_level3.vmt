@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "vgui/logos/cryan_custom_hud/hud_obj_status_tele_level3"
+	"$baseTexture" "vgui/logos/visual_improve_hud/hud_obj_status_tele_level3"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1
