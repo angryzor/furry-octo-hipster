@@ -1,0 +1,17 @@
+This is a list of known bugs/glitches.
+Should you encounter a glitch that is not listed here, please let me know,
+but don't tell me about those already in here. I'm aware of them and just putting them aside
+for now because otherwise I would be trying to perfect it forever and I wouldn't advance at all.
+
+
+Engi HUD glitches
+------------------
+ - Sometimes the Level indicator on the teleporters doesn't show up when they have been created/destroyed in a specific order
+ - Black bar in the disabled version of the Engi HUD items is slightly darker in the dispenser and teleporter items
+ - Level indicator "font" differs slightly in the dispenser item
+
+
+Death notice glitches
+----------------------
+ - Backburner icon shows "killed in back" on every crit, also on random crits.
+

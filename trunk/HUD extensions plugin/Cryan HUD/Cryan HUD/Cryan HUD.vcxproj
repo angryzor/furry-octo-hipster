@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Source SDK\public\tier0\memoverride.cpp" />
+    <ClCompile Include="..\..\..\..\..\Source SDK\public\vgui_controls\vgui_controls.cpp" />
+    <ClCompile Include="DeathNotices.cpp" />
+    <ClCompile Include="EngiHUD.cpp" />
+    <ClCompile Include="MemoryOpener.cpp" />
+    <ClCompile Include="MemoryRangeWorker.cpp" />
+    <ClCompile Include="MemoryScanner.cpp" />
+    <ClCompile Include="RTTIScanner.cpp" />
+    <ClCompile Include="HUDPlugin.cpp" />
+    <ClCompile Include="SigScanner.cpp" />
+    <ClCompile Include="VTableHooker.cpp" />
+    <ClCompile Include="VTableScanner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="classtools.h" />
+    <ClInclude Include="DeathNotices.h" />
+    <ClInclude Include="EngiHUD.h" />
+    <ClInclude Include="HUDPlugin.h" />
+    <ClInclude Include="MemoryOpener.h" />
+    <ClInclude Include="MemoryRangeWorker.h" />
+    <ClInclude Include="MemoryScanner.h" />
+    <ClInclude Include="RTTIScanner.h" />
+    <ClInclude Include="RTTIStructs.h" />
+    <ClInclude Include="SigScanner.h" />
+    <ClInclude Include="vguihelpers.h" />
+    <ClInclude Include="VTableHooker.h" />
+    <ClInclude Include="VTableScanner.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50CA5BB2-9E45-470E-88B9-2DDCFF14B82E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CryanHUD</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath);C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\dlls;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\engine;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\tier0;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\tier1;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\vstdlib;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\tier1</IncludePath>
+    <LibraryPath>$(LibraryPath);C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\lib\public</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath);C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\dlls;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\engine;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\tier0;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\tier1;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\public\vstdlib;C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\tier1</IncludePath>
+    <LibraryPath>$(LibraryPath);C:\Users\Ruben Tytgat\Documents\Programmeerprojecten\Source SDK\lib\public</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CRYANHUD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>tier0.lib;tier1.lib;tier2.lib;tier3.lib;vgui_controls.lib;vstdlib.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(OutDir)$(TargetName)$(TargetExt)" "%TF2LOC%\tf\addons"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CRYANHUD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DisableSpecificWarnings>4290</DisableSpecificWarnings>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>tier0.lib;tier1.lib;tier2.lib;tier3.lib;vgui_controls.lib;vstdlib.lib;psapi.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(OutDir)$(TargetName)$(TargetExt)" "%TF2LOC%\tf\addons"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

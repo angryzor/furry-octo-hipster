@@ -1,0 +1,3 @@
+materials/hud/hud_obj_status_dispenser
+materials/hud/hud_obj_status_tele_entrance
+materials/hud/hud_obj_status_tele_exit

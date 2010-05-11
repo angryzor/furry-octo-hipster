@@ -1,0 +1,339 @@
+
+
+
+		"obj_status_upgrade_dispenser_2"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/dispenser_2"
+			"x"		"0"
+			"y"		"0"
+			"width"		"256"
+			"height"	"128"
+		}
+		"obj_status_upgrade_dispenser_3"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/dispenser_3"
+			"x"		"0"
+			"y"		"0"
+			"width"		"256"
+			"height"	"128"
+		}
+		"obj_status_tele_entrance_custom"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/hud_obj_status_tele_entrance"
+			"x"		"0"
+			"y"		"0"
+			"width"		"256"
+			"height"	"128"
+		}
+		"obj_status_tele_exit_custom"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/hud_obj_status_tele_exit"
+			"x"		"0"
+			"y"		"0"
+			"width"		"256"
+			"height"	"128"
+		}
+
+		"obj_status_tele_level1"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/hud_obj_status_tele_level1"
+			"x"		"0"
+			"y"		"0"
+			"width"		"128"
+			"height"	"128"
+		}
+		"obj_status_tele_level2"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/hud_obj_status_tele_level2"
+			"x"		"0"
+			"y"		"0"
+			"width"		"128"
+			"height"	"128"
+		}
+		"obj_status_tele_level3"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/hud_obj_status_tele_level3"
+			"x"		"0"
+			"y"		"0"
+			"width"		"128"
+			"height"	"128"
+		}
+		"obj_status_textual_level1"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/hud_obj_status_textual_level1"
+			"x"		"0"
+			"y"		"0"
+			"width"		"32"
+			"height"	"32"
+		}
+		"obj_status_textual_level2"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/hud_obj_status_textual_level2"
+			"x"		"0"
+			"y"		"0"
+			"width"		"32"
+			"height"	"32"
+		}
+		"obj_status_textual_level3"
+		{
+			"file"	"vgui/logos/cryan_custom_hud/hud_obj_status_textual_level3"
+			"x"		"0"
+			"y"		"0"
+			"width"		"32"
+			"height"	"32"
+		}
+		"obj_status_background_blue"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/eng_status_area_tele_blue"
+			"x"			"43"
+			"y"			"0"
+			"width"		"200"
+			"height"	"64"
+		}
+
+		"obj_status_background_red"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/eng_status_area_tele_red"
+			"x"			"43"
+			"y"			"0"
+			"width"		"200"
+			"height"	"64"
+		}
+		
+		"obj_status_background_disabled"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/eng_status_area_tele_disabled"
+			"x"			"43"
+			"y"			"0"
+			"width"		"200"
+			"height"	"64"
+		}
+
+		"obj_status_background_tall_blue"	
+		{
+			"file"		"vgui/logos/cryan_custom_hud/eng_status_area_sentry_blue"
+			"x"		"0"
+			"y"		"0"
+			"width"		"243"
+			"height"	"110"
+		}
+
+		"obj_status_background_tall_red"	
+		{
+			"file"		"vgui/logos/cryan_custom_hud/eng_status_area_sentry_red"
+			"x"		"0"
+			"y"		"0"
+			"width"		"243"
+			"height"	"110"
+		}
+		
+		"obj_status_background_tall_disabled"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/eng_status_area_sentry_disabled"
+			"x"			"0"
+			"y"			"0"
+			"width"		"243"
+			"height"	"110"
+		}
+		"obj_status_tele_left_btm"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/hud_obj_status_tele_left_btm"
+			"x"			"0"
+			"y"			"0"
+			"width"		"45"
+			"height"	"64"
+		}
+		"obj_status_tele_left_btm_d"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/hud_obj_status_tele_left_btm_d"
+			"x"			"0"
+			"y"			"0"
+			"width"		"45"
+			"height"	"64"
+		}
+		"obj_status_tele_left_top"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/hud_obj_status_tele_left_top"
+			"x"			"0"
+			"y"			"0"
+			"width"		"45"
+			"height"	"64"
+		}
+		"obj_status_tele_left_top_d"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/hud_obj_status_tele_left_top_d"
+			"x"			"0"
+			"y"			"0"
+			"width"		"45"
+			"height"	"64"
+		}
+		"obj_status_tele_left_full"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/hud_obj_status_tele_left_full"
+			"x"			"0"
+			"y"			"0"
+			"width"		"45"
+			"height"	"64"
+		}
+		"obj_status_tele_left_full_d"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/hud_obj_status_tele_left_full_d"
+			"x"			"0"
+			"y"			"0"
+			"width"		"45"
+			"height"	"64"
+		}
+		"cryan_null"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/null"
+			"x"			"0"
+			"y"			"0"
+			"width"		"8"
+			"height"	"8"
+		}
+		"d_force_a_nature"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_force_a_nature"
+			"x"			"0"
+			"y"			"0"
+			"width"		"96"
+			"height"	"32"
+		}
+		"dneg_force_a_nature"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_force_a_nature"
+			"x"			"0"
+			"y"			"0"
+			"width"		"96"
+			"height"	"32"
+		}
+		"d_blutsauger"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_blutsauger"
+			"x"			"0"
+			"y"			"0"
+			"width"		"96"
+			"height"	"32"
+		}
+		"dneg_blutsauger"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_blutsauger"
+			"x"			"0"
+			"y"			"0"
+			"width"		"96"
+			"height"	"32"
+		}
+		"d_natascha"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_natascha"
+			"x"			"0"
+			"y"			"0"
+			"width"		"82"
+			"height"	"32"
+		}
+		"dneg_natascha"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_natascha"
+			"x"			"0"
+			"y"			"0"
+			"width"		"82"
+			"height"	"32"
+		}
+		"d_backburner"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_backburner"
+			"x"			"0"
+			"y"			"0"
+			"width"		"96"
+			"height"	"32"
+		}
+		"dneg_backburner"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_backburner"
+			"x"			"0"
+			"y"			"0"
+			"width"		"96"
+			"height"	"32"
+		}
+		"d_telefrag"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_telefrag"
+			"x"			"0"
+			"y"			"0"
+			"width"		"64"
+			"height"	"32"
+		}
+		"dneg_telefrag"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_telefrag"
+			"x"			"0"
+			"y"			"0"
+			"width"		"64"
+			"height"	"32"
+		}
+		"d_backburner_back"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_backburner_back"
+			"x"			"0"
+			"y"			"0"
+			"width"		"108"
+			"height"	"32"
+		}
+		"dneg_backburner_back"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_backburner_back"
+			"x"			"0"
+			"y"			"0"
+			"width"		"108"
+			"height"	"32"
+		}
+		"d_building_destroy"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_building_destroy"
+			"x"			"0"
+			"y"			"0"
+			"width"		"48"
+			"height"	"32"
+		}
+		"dneg_building_destroy"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_building_destroy"
+			"x"			"0"
+			"y"			"0"
+			"width"		"48"
+			"height"	"32"
+		}
+		"d_sledgehammer"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_sledgehammer"
+			"x"			"0"
+			"y"			"0"
+			"width"		"64"
+			"height"	"32"
+		}
+		"dneg_sledgehammer"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_sledgehammer"
+			"x"			"0"
+			"y"			"0"
+			"width"		"64"
+			"height"	"32"
+		}
+		"d_paintrain"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/d_paintrain"
+			"x"			"0"
+			"y"			"0"
+			"width"		"64"
+			"height"	"32"
+		}
+		"dneg_paintrain"
+		{
+			"file"		"vgui/logos/cryan_custom_hud/dneg_paintrain"
+			"x"			"0"
+			"y"			"0"
+			"width"		"64"
+			"height"	"32"
+		}
+	}
+}
