@@ -9,16 +9,20 @@ if not "%TF2LOC%"=="" (
 echo Reading registry for Steam location.
 for /F "tokens=1,2,*" %%i in ('reg query HKCU\Software\Valve\Steam /v SteamPath') do if "%%i"=="SteamPath" set STEAMLOC=%%k
 
-if "%STEAMLOC%"=="" (
-	echo Steam location could not be deduced from registry!
-	set /P "STEAMLOC=> Please enter location of steam folder manually: "
-)
-
 rem Registry weirdly keeps path with slashes instead of backslashes
 rem this sometimes gives problems so we get rid of this with a trick
 rem It also makes sure we don't have any trailing backslashes
 
-pushd "%STEAMLOC%"
+:afterregbad
+echo Trying steam location "%STEAMLOC%"
+if "%STEAMLOC%"=="" goto registrybad
+pushd "%STEAMLOC%" > NUL 2>&1
+if errorlevel 1 goto registrybad
+if not exist "%STEAMLOC%\steam.exe" (
+	popd
+	goto registrybad
+)
+
 set STEAMLOC=%CD%
 popd
 
@@ -41,3 +45,12 @@ if not exist "%TF2LOC%" (
 	set TF2LOC=
 	goto start
 )
+
+goto end
+
+:registrybad
+echo Bad steam location!
+set /P "STEAMLOC=> Please enter location of steam folder manually: "
+goto afterregbad
+
+:end
