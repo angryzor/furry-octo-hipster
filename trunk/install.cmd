@@ -7,6 +7,10 @@ echo Installing mod...
 
 rd /S /Q "%TF2LOC%\tf\materials\vgui\logos\visual_improve_hud"
 
+pushd installtools
+vcredist_x86.exe
+popd
+
 xcopy /S /E /Y "tf" "%TF2LOC%\tf"
 
 pushd installtools

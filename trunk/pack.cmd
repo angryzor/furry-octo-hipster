@@ -7,7 +7,7 @@ md packing
 md packing\tf
 xcopy "tf" "packing\tf" /S /E /Y
 
-winrar a release.zip -m5 installtools install.cmd uninstall.cmd "README IM SERIOUS.txt" glitches.txt
+winrar a release.zip -m5 installtools install.cmd uninstall.cmd "README IM SERIOUS.txt" glitches.txt LICENSE.html
 
 pushd packing
 winrar a ..\release.zip -m5 tf
