@@ -1,3 +1,8 @@
-Go to http://rapidshare.com/files/386148206/release.zip
+Go to one of the following urls:
 
-you can download there. FPSBanana doesn't allow the files i need in zip files.
+http://rapidshare.com/files/386269426/release.zip
+http://www.filefront.com/16421107/release.zip
+http://www.mediafire.com/?yw0oen1tomg
+
+You can download there. FPSBanana doesn't allow the files the mod needs in zip files. 
+(files like .cmd files (for installers) and .dll files (to enable the unlock icons/engi hud extensions))
