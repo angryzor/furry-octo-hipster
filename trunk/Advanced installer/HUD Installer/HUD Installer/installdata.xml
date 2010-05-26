@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InstallData xmlns="http://www.fpsbanana.com/guis/23833/installdata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.fpsbanana.com/guis/23833/installdata installdata.xsd">
+  <!-- *** Basics: the plugin ***** -->
+  <Component>
+    <Id>plugin</Id>
+    <Name>HUD Extensions Plugin DLL (needed for a lot of the HUD enhancements)</Name>
+    <Author>angryzor</Author>
+    <Image>plugin.png</Image>
+    <Depend>plugin</Depend>
+    <File>addons</File>
+  </Component>
+
+  <!-- *** Engi hud *************** -->
+  <Component>
+    <Id>engi_hud</Id>
+    <Name>Engineer HUD</Name>
+    <Author>angryzor</Author>
+    <Image>engi_hud.png</Image>
+    <Depend>plugin</Depend>
+    <File>resource</File>
+    <File>materials\vgui\logos\visual_improve_hud\eng_status_area*.*</File>
+    <File>materials\vgui\logos\visual_improve_hud\hud_obj_status*.*</File>
+    <Patch file="mod_textures">mt_engi_hud.txt</Patch>
+  </Component>
+
+
+  <!-- *** angryzor death icons *** -->
+  <!-- BEGIN old unlocks -->
+  <Component>
+    <Id>dn_fan_1</Id>
+    <Name>Force-a-Nature 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_fan_1.png</Image>
+    <Category>death notices/fan</Category>
+    <CategoryConflict>death notices/fan</CategoryConflict>
+    <Depend>plugin</Depend>
+    <File>materials\vgui\logos\visual_improve_hud\d_force_a_nature.*</File>
+    <Patch file="mod_textures">mt_dn_fan_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_blutsauger_1</Id>
+    <Name>Blutsauger 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_blutsauger_1.png</Image>
+    <Category>death notices/blutsauger</Category>
+    <CategoryConflict>death notices/blutsauger</CategoryConflict>
+    <Depend>plugin</Depend>
+    <File>materials\vgui\logos\visual_improve_hud\d_blutsauger.*</File>
+    <Patch file="mod_textures">mt_dn_blutsauger_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_backburner_1</Id>
+    <Name>Backburner 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_backburner_1.png</Image>
+    <Category>death notices/backburner</Category>
+    <CategoryConflict>death notices/backburner</CategoryConflict>
+    <Depend>plugin</Depend>
+    <File>materials\vgui\logos\visual_improve_hud\d_backburner.*</File>
+    <Patch file="mod_textures">mt_dn_backburner_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_backburner_back_1</Id>
+    <Name>Backburner in back 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_backburner_back_1.png</Image>
+    <Category>death notices/backburner_back</Category>
+    <CategoryConflict>death notices/backburner_back</CategoryConflict>
+    <Depend>plugin</Depend>
+    <File>materials\vgui\logos\visual_improve_hud\d_backburner_back.*</File>
+    <Patch file="mod_textures">mt_dn_backburner_back_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_natascha_1</Id>
+    <Name>Natascha 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_natascha_1.png</Image>
+    <Category>death notices/natascha</Category>
+    <CategoryConflict>death notices/natascha</CategoryConflict>
+    <Depend>plugin</Depend>
+    <File>materials\vgui\logos\visual_improve_hud\d_natascha.*</File>
+    <Patch file="mod_textures">mt_dn_natascha_1.txt</Patch>
+  </Component>
+  <!-- END old unlocks -->
+
+  <!-- BEGIN new unlocks -->
+  <Component>
+    <Id>dn_paintrain_1</Id>
+    <Name>Pain Train 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_paintrain_1.png</Image>
+    <Category>death notices/paintrain</Category>
+    <CategoryConflict>death notices/paintrain</CategoryConflict>
+    <File>materials\vgui\logos\visual_improve_hud\d_paintrain.*</File>
+    <Patch file="mod_textures">mt_dn_paintrain_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_sledgehammer_1</Id>
+    <Name>Pain Train 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_sledgehammer_1.png</Image>
+    <Category>death notices/sledgehammer</Category>
+    <CategoryConflict>death notices/sledgehammer</CategoryConflict>
+    <File>materials\vgui\logos\visual_improve_hud\d_sledgehammer.*</File>
+    <Patch file="mod_textures">mt_dn_sledgehammer_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_telefrag_1</Id>
+    <Name>Telefrag 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_telefrag_1.png</Image>
+    <Category>death notices/telefrag</Category>
+    <CategoryConflict>death notices/telefrag</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_telefrag_1.txt</Patch>
+  </Component>
+  <!-- END new unlocks -->
+
+  <!-- Completely new icons -->
+  <Component>
+    <Id>dn_building_destroy_1</Id>
+    <Name>Destroy own building 1</Name>
+    <Author>angryzor</Author>
+    <Image>dn_building_destroy_1.png</Image>
+    <Category>death notices/building_destroy</Category>
+    <CategoryConflict>death notices/building_destroy</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_building_destroy_1.txt</Patch>
+  </Component>
+
+
+  <!-- *** Dement death icons ***** -->
+  <!-- Textures -->
+  <Component hidden="true">
+    <Id>dn_dement_tex_1</Id>
+    <Name>Dement's textures for death icons</Name>
+    <Author>Dement</Author>
+    <File>materials\vgui\logos\visual_improve_hud\dement_1</File>
+  </Component>
+
+  <!-- BEGIN improves -->
+  <Component>
+    <Id>dn_rocket_1</Id>
+    <Name>Rocketlauncher 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_rocket_1.png</Image>
+    <Category>death notices/rocket</Category>
+    <CategoryConflict>death notices/rocket</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_rocket_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_sniperrifle_1</Id>
+    <Name>Sniper Rifle 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_sniperrifle_1.png</Image>
+    <Category>death notices/sniperrifle</Category>
+    <CategoryConflict>death notices/sniperrifle</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_sniperrifle_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_syringegun_1</Id>
+    <Name>Syringe Gun 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_syringegun_1.png</Image>
+    <Category>death notices/syringegun</Category>
+    <CategoryConflict>death notices/syringegun</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_syringegun_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_gloves_1</Id>
+    <Name>Gloves 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_gloves_1.png</Image>
+    <Category>death notices/gloves</Category>
+    <CategoryConflict>death notices/gloves</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_gloves_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_sticky_resistance_1</Id>
+    <Name>Scottish Resistance 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_sticky_resistance_1.png</Image>
+    <Category>death notices/sticky_resistance</Category>
+    <CategoryConflict>death notices/sticky_resistance</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_sticky_resistance_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_backstab_1</Id>
+    <Name>Backstab 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_backstab_1.png</Image>
+    <Category>death notices/backstab</Category>
+    <CategoryConflict>death notices/backstab</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_backstab_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_headshot_1</Id>
+    <Name>Headshot 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_headshot_1.png</Image>
+    <Category>death notices/headshot</Category>
+    <CategoryConflict>death notices/headshot</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_headshot_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_huntsman_headshot_1</Id>
+    <Name>Huntsman headshot 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_huntsman_headshot_1.png</Image>
+    <Category>death notices/huntsman_headshot</Category>
+    <CategoryConflict>death notices/huntsman_headshot</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_huntsman_headshot_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_ambassador_1</Id>
+    <Name>Ambassador 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_ambassador_1.png</Image>
+    <Category>death notices/ambassador</Category>
+    <CategoryConflict>death notices/ambassador</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_ambassador_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_rocketlauncher_directhit_1</Id>
+    <Name>Direct Hit 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_rocketlauncher_directhit_1.png</Image>
+    <Category>death notices/rocketlauncher_directhit</Category>
+    <CategoryConflict>death notices/rocketlauncher_directhit</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_rocketlauncher_directhit_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_shotgun_1</Id>
+    <Name>Shotgun 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_shotgun_1.png</Image>
+    <Category>death notices/shotgun</Category>
+    <CategoryConflict>death notices/shotgun</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_shotgun_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_pistol_1</Id>
+    <Name>Pistol 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_pistol_1.png</Image>
+    <Category>death notices/pistol</Category>
+    <CategoryConflict>death notices/pistol</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_pistol_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_smg_1</Id>
+    <Name>SMG 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_smg_1.png</Image>
+    <Category>death notices/smg</Category>
+    <CategoryConflict>death notices/smg</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_smg_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_minigun_1</Id>
+    <Name>Minigun 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_minigun_1.png</Image>
+    <Category>death notices/minigun</Category>
+    <CategoryConflict>death notices/minigun</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_minigun_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_scattergun_1</Id>
+    <Name>Scattergun 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_scattergun_1.png</Image>
+    <Category>death notices/scattergun</Category>
+    <CategoryConflict>death notices/scattergun</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_scattergun_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_revolver_1</Id>
+    <Name>Revolver 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_revolver_1.png</Image>
+    <Category>death notices/revolver</Category>
+    <CategoryConflict>death notices/revolver</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_revolver_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_taunt_demoman_1</Id>
+    <Name>Demoman Taunt 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_taunt_demoman_1.png</Image>
+    <Category>death notices/taunt_demoman</Category>
+    <CategoryConflict>death notices/taunt_demoman</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_taunt_demoman_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_demoshield_1</Id>
+    <Name>Chargin' Targe 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_demoshield_1.png</Image>
+    <Category>death notices/demoshield</Category>
+    <CategoryConflict>death notices/demoshield</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_demoshield_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_taunt_spy_1</Id>
+    <Name>Spy Taunt 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_taunt_spy_1.png</Image>
+    <Category>death notices/taunt_spy</Category>
+    <CategoryConflict>death notices/taunt_spy</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_taunt_spy_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_vehicle_1</Id>
+    <Name>Train 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_vehicle_1.png</Image>
+    <Category>death notices/vehicle</Category>
+    <CategoryConflict>death notices/vehicle</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_vehicle_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_reddefend_1</Id>
+    <Name>Red defended 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_reddefend_1.png</Image>
+    <Category>death notices/reddefend</Category>
+    <CategoryConflict>death notices/reddefend</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_reddefend_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_redcapture_1</Id>
+    <Name>Red captured 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_redcapture_1.png</Image>
+    <Category>death notices/redcapture</Category>
+    <CategoryConflict>death notices/redcapture</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_redcapture_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_flamethrower_1</Id>
+    <Name>Flamethrower 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_flamethrower_1.png</Image>
+    <Category>death notices/flamethrower</Category>
+    <CategoryConflict>death notices/flamethrower</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_flamethrower_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_bat_1</Id>
+    <Name>Bat 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_bat_1.png</Image>
+    <Category>death notices/bat</Category>
+    <CategoryConflict>death notices/bat</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_bat_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_bat_wood_1</Id>
+    <Name>Sandman 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_bat_wood_1.png</Image>
+    <Category>death notices/bat_wood</Category>
+    <CategoryConflict>death notices/bat_wood</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_bat_wood_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_huntsman_flyingburn_1</Id>
+    <Name>Huntsman bodyshot with burning arrow 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_huntsman_flyingburn_1.png</Image>
+    <Category>death notices/huntsman_flyingburn</Category>
+    <CategoryConflict>death notices/huntsman_flyingburn</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_huntsman_flyingburn_1.txt</Patch>
+  </Component>
+  <!-- END improves -->
+
+  <!-- BEGIN old unlocks -->
+  <Component>
+    <Id>dn_fan_2</Id>
+    <Name>Force-a-Nature 2</Name>
+    <Author>Dement</Author>
+    <Image>dn_fan_2.png</Image>
+    <Category>death notices/fan</Category>
+    <CategoryConflict>death notices/fan</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_fan_2.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_blutsauger_2</Id>
+    <Name>Blutsauger 2</Name>
+    <Author>Dement</Author>
+    <Image>dn_blutsauger_2.png</Image>
+    <Category>death notices/blutsauger</Category>
+    <CategoryConflict>death notices/blutsauger</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_blutsauger_2.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_backburner_2</Id>
+    <Name>Backburner 2</Name>
+    <Author>Dement</Author>
+    <Image>dn_backburner_2.png</Image>
+    <Category>death notices/backburner</Category>
+    <CategoryConflict>death notices/backburner</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_backburner_2.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_backburner_back_2</Id>
+    <Name>Backburner in back 2</Name>
+    <Author>Dement</Author>
+    <Image>dn_backburner_back_2.png</Image>
+    <Category>death notices/backburner_back</Category>
+    <CategoryConflict>death notices/backburner_back</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_backburner_2.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_backburner_3</Id>
+    <Name>Backburner 3</Name>
+    <Author>Dement</Author>
+    <Image>dn_backburner_3.png</Image>
+    <Category>death notices/backburner</Category>
+    <CategoryConflict>death notices/backburner</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_backburner_3.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_backburner_back_3</Id>
+    <Name>Backburner in back 3</Name>
+    <Author>Dement</Author>
+    <Image>dn_backburner_back_3.png</Image>
+    <Category>death notices/backburner_back</Category>
+    <CategoryConflict>death notices/backburner_back</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_backburner_3.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_natascha_2</Id>
+    <Name>Natascha 2</Name>
+    <Author>Dement</Author>
+    <Image>dn_natascha_2.png</Image>
+    <Category>death notices/natascha</Category>
+    <CategoryConflict>death notices/natascha</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_natascha_2.txt</Patch>
+  </Component>
+  <!-- END old unlocks -->
+
+  <!-- BEGIN new unlocks -->
+  <Component>
+    <Id>dn_paintrain_2</Id>
+    <Name>Pain Train 2</Name>
+    <Author>Dement</Author>
+    <Image>dn_paintrain_2.png</Image>
+    <Category>death notices/paintrain</Category>
+    <CategoryConflict>death notices/paintrain</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_paintrain_2.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_sledgehammer_2</Id>
+    <Name>Pain Train 2</Name>
+    <Author>Dement</Author>
+    <Image>dn_sledgehammer_2.png</Image>
+    <Category>death notices/sledgehammer</Category>
+    <CategoryConflict>death notices/sledgehammer</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_sledgehammer_2.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_battleaxe_1</Id>
+    <Name>Scotsman's Skullcutter 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_battleaxe_1.png</Image>
+    <Category>death notices/battleaxe</Category>
+    <CategoryConflict>death notices/battleaxe</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_battleaxe_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_tribalkukri_1</Id>
+    <Name>Tribalman's Shiv 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_tribalkukri_1.png</Image>
+    <Category>death notices/tribalkukri</Category>
+    <CategoryConflict>death notices/tribalkukri</CategoryConflict>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_tribalkukri_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_samrevolver_1</Id>
+    <Name>Big Kill 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_samrevolver_1.png</Image>
+    <Category>death notices/samrevolver</Category>
+    <CategoryConflict>death notices/samrevolver</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_samrevolver_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_maxgun_1</Id>
+    <Name>Lugermorph 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_maxgun_1.png</Image>
+    <Category>death notices/maxgun</Category>
+    <CategoryConflict>death notices/maxgun</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_maxgun_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_taunt_medic_1</Id>
+    <Name>Medic Taunt 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_taunt_medic_1.png</Image>
+    <Category>death notices/taunt_medic</Category>
+    <CategoryConflict>death notices/taunt_medic</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_taunt_medic_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_deflect_ball_1</Id>
+    <Name>Deflect Ball 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_deflect_ball_1.png</Image>
+    <Category>death notices/deflect_ball</Category>
+    <CategoryConflict>death notices/deflect_ball</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_deflect_ball_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_deflect_huntsman_headshot_1</Id>
+    <Name>Deflect arrow headshot 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_deflect_huntsman_headshot_1.png</Image>
+    <Category>death notices/deflect_huntsman_headshot</Category>
+    <CategoryConflict>death notices/deflect_huntsman_headshot</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_deflect_huntsman_headshot_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_huntsman_flyingburn_headshot_1</Id>
+    <Name>Huntsman Headshot with burning arrow 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_huntsman_flyingburn_headshot_1.png</Image>
+    <Category>death notices/huntsman_flyingburn_headshot</Category>
+    <CategoryConflict>death notices/huntsman_flyingburn_headshot</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_huntsman_flyingburn_headshot_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_deflect_huntsman_flyingburn_1</Id>
+    <Name>Deflect burning arrow 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_deflect_huntsman_flyingburn_1.png</Image>
+    <Category>death notices/deflect_huntsman_flyingburn</Category>
+    <CategoryConflict>death notices/deflect_huntsman_flyingburn</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_deflect_huntsman_flyingburn_1.txt</Patch>
+  </Component>
+  <Component>
+    <Id>dn_deflect_huntsman_flyingburn_headshot_1</Id>
+    <Name>Deflect burning arrow headshot 1</Name>
+    <Author>Dement</Author>
+    <Image>dn_deflect_huntsman_flyingburn_headshot_1.png</Image>
+    <Category>death notices/deflect_huntsman_flyingburn_headshot</Category>
+    <CategoryConflict>death notices/deflect_huntsman_flyingburn_headshot</CategoryConflict>
+    <Depend>plugin</Depend>
+    <Depend>dn_dement_tex_1</Depend>
+    <Patch file="mod_textures">mt_dn_deflect_huntsman_flyingburn_headshot_1.txt</Patch>
+  </Component>
+  <!-- END new unlocks -->
+
+</InstallData>

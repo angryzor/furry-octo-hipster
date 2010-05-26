@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.fpsbanana.com/guis/23833/installpresets" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InstallPresets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Default" type="xs:string" />
+        <xs:element maxOccurs="unbounded" name="Preset">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Setting">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="for" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

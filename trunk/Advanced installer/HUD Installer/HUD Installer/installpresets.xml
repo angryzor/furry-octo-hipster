@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InstallPresets xmlns="http://www.fpsbanana.com/guis/23833/installpresets" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.fpsbanana.com/guis/23833/installpresets installpresets.xsd">
+  <Default>up_to_date</Default>
+  <Preset id="up_to_date">
+    <Name>Most up to date</Name>
+    <Setting for="rocket">dn_rocket_1</Setting>
+    <Setting for="sniperrifle">dn_sniperrifle_1</Setting>
+  </Preset>
+</InstallPresets>

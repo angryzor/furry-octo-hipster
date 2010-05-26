@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.fpsbanana.com/guis/23833/installdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InstallData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Component">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:string" />
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Author" type="xs:string" />
+              <xs:element minOccurs="0" name="Image" type="xs:string" />
+              <xs:element minOccurs="0" name="Category" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Tag" type="xs:string" />
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="Depend" type="xs:string" />
+                <xs:element name="TagConflict" type="xs:string" />
+                <xs:element name="CategoryConflict" type="xs:string" />
+                <xs:element name="ComponentConflict" type="xs:string" />
+                <xs:element name="File" type="xs:string" />
+                <xs:element name="Patch">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute name="file" type="xs:string" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="hidden" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

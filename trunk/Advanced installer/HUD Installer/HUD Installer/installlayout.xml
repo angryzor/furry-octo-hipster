@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InstallLayout xmlns="http://www.fpsbanana.com/guis/23833/installlayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.fpsbanana.com/guis/23833/installlayout installlayout.xsd">
+  <Tab>
+    <Title>Death Icons</Title>
+    <Choice>
+      <Id>rocket</Id>
+      <Label>Rocketlauncher</Label>
+      <Category>death notices/rocket</Category>
+    </Choice>
+    <Choice>
+      <Id>sniperrifle</Id>
+      <Label>Sniper Rifle</Label>
+      <Category>death notices/sniperrifle</Category>
+    </Choice>
+  </Tab>
+  <Tab>
+    <Title>Engi HUD</Title>
+    <Checkbox>
+      <Id>engi_hud</Id>
+      <Component>engi_hud</Component>
+    </Checkbox>
+  </Tab>
+</InstallLayout>
