@@ -56,17 +56,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="InstallCheckbox.xaml.cs">
+    <Compile Include="Controls\InstallCheckbox.xaml.cs">
       <DependentUpon>InstallCheckbox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InstallChoiceItem.xaml.cs">
+    <Compile Include="Controls\InstallChoiceItem.xaml.cs">
       <DependentUpon>InstallChoiceItem.xaml</DependentUpon>
     </Compile>
-    <Page Include="InstallCheckbox.xaml">
+    <Page Include="Controls\InstallCheckbox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="InstallChoice.xaml">
+    <Page Include="Controls\InstallChoice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -79,16 +79,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="InstallData.cs" />
-    <Compile Include="InstallChoice.xaml.cs">
+    <Compile Include="Controls\InstallChoice.xaml.cs">
       <DependentUpon>InstallChoice.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Selectable.cs" />
-    <Compile Include="Updateable.cs" />
+    <Compile Include="Controls\Selectable.cs" />
+    <Compile Include="Controls\Updateable.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="InstallChoiceItem.xaml">
+    <Page Include="Controls\InstallChoiceItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,33 +111,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="installdata.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="installlayout.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="installpresets.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="installdata.xml">
-      <SubType>Designer</SubType>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="installlayout.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="installpresets.xml">
-      <SubType>Designer</SubType>
-    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
